@@ -1,0 +1,247 @@
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 704px;
+
+  &__left {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 74.6875%;
+    height: 100%;
+    background: url('../img/bg/jasmin-noir.jpg') right center / cover no-repeat;
+
+    &-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 95%;
+      height: 100%;
+      padding: 32px 0 40px;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+
+    &-title {
+      font-size: 24px;
+      line-height: 1.2;
+      font-weight: 600;
+      color: #c44c4c;
+      text-transform: uppercase;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  &__sign {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 37px;
+    height: 39px;
+    margin-right: 8px;
+
+    &-item {
+      width: 18px;
+      height: 19px;
+      margin: 0 1px 1px 0;
+      background: #c44c4c;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__control {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    &-link {
+      margin-right: 25px;
+      font-size: 14px;
+      line-height: 1.2;
+      color: #636262;
+      text-transform: uppercase;
+      cursor: pointer;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        color: darken(#636262, 10%);
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 38px;
+  }
+
+  &__title {
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 200;
+    color: #363636;
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    margin-bottom: 25px;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #5d5d5d;
+    text-transform: uppercase;
+  }
+
+  &__price {
+    margin-bottom: 25px;
+    font-size: 17px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #373737;
+  }
+
+  &__buy-link {
+    display: block;
+    padding: 10px 30px;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 600;
+    border: 1px solid #c54d4d;
+    border-radius: 18px;
+    color: #c54d4d;
+    text-transform: uppercase;
+
+    &:hover {
+      color: darken(#c54d4d, 10%);
+      border-color: darken(#c54d4d, 10%)
+    }
+  }
+
+  &__dots {
+    align-self: center;
+    display: flex;
+
+    &-item {
+      width: 9px;
+      height: 9px;
+      margin-right: 7px;
+      border-radius: 50%;
+      background: #313131;
+      cursor: pointer;
+
+      &_active {
+        background: #c44c4c;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        background: #c44c4c;
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25.3125%;
+    height: 100%;
+    background: url('../img/bg/welcome-right.jpg') center center / cover no-repeat;
+    text-align: center;
+
+    &-container {
+      position: relative;
+      width: 90%;
+      height: 100%;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  &__item {
+    position: relative;
+    width: 45%;
+    margin-right: 10%;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:after {
+      content: '';
+      display: none;
+      position: absolute;
+      bottom: 45px;
+      left: 46%;
+      width: 19px;
+      height: 3px;
+      background: #c44c4c;
+    }
+
+    &:hover {
+
+      &:after {
+        display: block;
+      }
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 8.78;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    cursor: pointer;
+
+    &-line {
+      width: 20px;
+      height: 2px;
+      background: #c44c4c;
+
+      &_left {
+        transform: rotate(45deg);
+      }
+
+      &_right {
+        transform: rotate(-45deg) translateY(-2px);
+      }
+    }
+  }
+}
