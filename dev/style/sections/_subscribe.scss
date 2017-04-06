@@ -1,0 +1,58 @@
+.subscribe {
+  width: 100%;
+  background: url('../img/bg/subscribe.jpg') center center / cover no-repeat;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 475px;
+    padding: 80px 200px;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #2f2f2f;
+    text-transform: uppercase;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    &-email {
+      width: 470px;
+      height: 46px;
+      margin-bottom: 34px;
+      padding: 12px 15px;
+      border: 1px solid #b7b5b4;
+      font-size: 14px;
+      line-height: 1.2;
+      font-weight: 200;
+      color: #a5a5a5;
+    }
+
+    &-submit {
+      height: 45px;
+      padding: 12px 55px;
+      border: 1px solid #c54d4d;
+      border-radius: 20px;
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: 600;
+      color: #c54d4d;
+      text-transform: uppercase;
+
+      &:hover {
+        border-color: darken(#c54d4d, 10%);
+        color: darken(#c54d4d, 10%);
+      }
+    }
+  }
+}
